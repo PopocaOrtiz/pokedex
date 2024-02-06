@@ -19,20 +19,21 @@ Pokedex is a web application that allows users to browse through the first 151 P
    ```
 
 2. Navigate to the project directory:
-```
-cd pokedex
-```
+   ```
+   cd pokedex
+   ```
 
 3. Run Docker Compose to start the frontend and backend:
-```
-docker-compose up
-```
-### Create a User
-To create a user, use the createsuperuser command inside the django container:
-```
-python manage.py createsuperuser --username myuser --email myuser@example.com
-```
-The first user created will always be used by default.
+   ```
+   docker-compose up
+   ```
+
+4. Create a User
+   To create a user, use the createsuperuser command inside the django container:
+   ```
+   python manage.py createsuperuser --username myuser --email myuser@example.com
+   ```
+   The first user created will always be used by default.
 
 4. Access the frontend at http://localhost:3000 and the backend api at http://localhost:8000.
 
@@ -54,3 +55,9 @@ To run backend tests, using pytest inside the django container, run:
 ```
 pytest
 ```
+
+## Screenshots
+### Frontend
+![Frontend](frontend_example.png)
+### Backend
+![Backend](backend_example.png)
